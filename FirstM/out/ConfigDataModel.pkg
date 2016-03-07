@@ -1,0 +1,567 @@
+class ConfigDataModel
+: public CCObject
+{
+public:
+    ConfigDataModel();
+    ~ConfigDataModel();
+    static ConfigDataModel* shareConfigDataModel();
+    
+    static string VERSION_PLACE;
+    
+    CCDictionary * _textDict;
+    void setTextDict(CCDictionary * _textDict;);
+    CCDictionary * getTextDict();
+
+    CCDictionary * _alertDict;
+    void setAlertDict(CCDictionary * _alertDict;);
+    CCDictionary * getAlertDict();
+
+    CCDictionary * _textCcbDict;
+    void setTextCcbDict(CCDictionary * _textCcbDict;);
+    CCDictionary * getTextCcbDict();
+
+    CCDictionary * _textSNSDict;
+    void setTextSNSDict(CCDictionary * _textSNSDict;);
+    CCDictionary * getTextSNSDict();
+
+
+    
+    CCArray * _twitterTextList;
+    void setTwitterTextList(CCArray * _twitterTextList;);
+    CCArray * getTwitterTextList();
+
+    
+    // 卡牌图鉴
+    int _tagCardCount;
+    void setTagCardCount(int _tagCardCount;);
+    int getTagCardCount();
+
+    
+    int _cardHeroGType;
+    void setCardHeroGType(int _cardHeroGType;);
+    int getCardHeroGType();
+
+    CCDictionary * _cardHeroPerDict;
+    void setCardHeroPerDict(CCDictionary * _cardHeroPerDict;);
+    CCDictionary * getCardHeroPerDict();
+
+    CCArray * _cardHeroArr;
+    void setCardHeroArr(CCArray * _cardHeroArr;);
+    CCArray * getCardHeroArr();
+
+    
+    int _cardMonsterType;
+    void setCardMonsterType(int _cardMonsterType;);
+    int getCardMonsterType();
+
+    CCDictionary * _cardMonsterTypeDict;
+    void setCardMonsterTypeDict(CCDictionary * _cardMonsterTypeDict;);
+    CCDictionary * getCardMonsterTypeDict();
+
+    CCArray * _cardMonsterArr;
+    void setCardMonsterArr(CCArray * _cardMonsterArr;);
+    CCArray * getCardMonsterArr();
+
+    
+    int _cardEquipType;
+    void setCardEquipType(int _cardEquipType;);
+    int getCardEquipType();
+
+    CCDictionary * _cardEquipTypeDict;
+    void setCardEquipTypeDict(CCDictionary * _cardEquipTypeDict;);
+    CCDictionary * getCardEquipTypeDict();
+
+    CCArray * _cardEquipArr;
+    void setCardEquipArr(CCArray * _cardEquipArr;);
+    CCArray * getCardEquipArr();
+
+    
+    CCDictionary * _cardWithoutDict;
+    void setCardWithoutDict(CCDictionary * _cardWithoutDict;);
+    CCDictionary * getCardWithoutDict();
+
+    CCDictionary * _equipWithoutDict;
+    void setEquipWithoutDict(CCDictionary * _equipWithoutDict;);
+    CCDictionary * getEquipWithoutDict();
+
+    
+
+    
+    CCArray * _tipsArr;
+    void setTipsArr(CCArray * _tipsArr;);
+    CCArray * getTipsArr();
+
+    CCDictionary * _cardDict;
+    void setCardDict(CCDictionary * _cardDict;);
+    CCDictionary * getCardDict();
+
+    CCDictionary * _jobDict;
+    void setJobDict(CCDictionary * _jobDict;);
+    CCDictionary * getJobDict();
+
+    CCDictionary * _itemFoundDict;
+    void setItemFoundDict(CCDictionary * _itemFoundDict;);
+    CCDictionary * getItemFoundDict();
+
+    CCDictionary * _itemDataDict;
+    void setItemDataDict(CCDictionary * _itemDataDict;);
+    CCDictionary * getItemDataDict();
+
+    CCDictionary * _fetterDataDict;
+    void setFetterDataDict(CCDictionary * _fetterDataDict;);
+    CCDictionary * getFetterDataDict();
+
+    CCDictionary * _monsterFormulaDataDict;
+    void setMonsterFormulaDataDict(CCDictionary * _monsterFormulaDataDict;);
+    CCDictionary * getMonsterFormulaDataDict();
+
+    CCDictionary * _monsterFormulaDataArrDict;
+    void setMonsterFormulaDataArrDict(CCDictionary * _monsterFormulaDataArrDict;);
+    CCDictionary * getMonsterFormulaDataArrDict();
+
+    CCDictionary * _levelUpPlusDataDict;
+    void setLevelUpPlusDataDataDict(CCDictionary * _levelUpPlusDataDict;);
+    CCDictionary * getLevelUpPlusDataDataDict();
+
+    CCArray * _levelUpExpDataArr;
+    void setLevelUpExpDataArr(CCArray * _levelUpExpDataArr;);
+    CCArray * getLevelUpExpDataArr();
+
+    CCDictionary * _cardStarDataDict;
+    void setCardStarDataDict(CCDictionary * _cardStarDataDict;);
+    CCDictionary * getCardStarDataDict();
+
+    CCDictionary * _cardPerLevelupDict;
+    void setCardPerLevelupDict(CCDictionary * _cardPerLevelupDict;);
+    CCDictionary * getCardPerLevelupDict();
+
+    
+    CCDictionary * _perCardIdDict;
+    void setPerCardIdDict(CCDictionary * _perCardIdDict;);
+    CCDictionary * getPerCardIdDict();
+
+    CCDictionary * _perCardIdDictKey;
+    void setPerCardIdDictKey(CCDictionary * _perCardIdDictKey;);
+    CCDictionary * getPerCardIdDictKey();
+
+    
+    CCDictionary * _composeCostInfoDict;
+    void setComposeCostInfoDict(CCDictionary * _composeCostInfoDict;);
+    CCDictionary * getComposeCostInfoDict();
+
+    CCArray * _composeVipDataArr;
+    void setComposeVipDataArr(CCArray * _composeVipDataArr;);
+    CCArray * getComposeVipDataArr();
+
+    CCArray * _dramaTalkDataArr;
+    void setDramaTalkDataArr(CCArray * _dramaTalkDataArr;);
+    CCArray * getDramaTalkDataArr();
+
+    
+    CCDictionary * _attackEffectDict;
+    void setAttackEffectDict(CCDictionary * _attackEffectDict;);
+    CCDictionary * getAttackEffectDict();
+
+    CCDictionary * _cardSkillDict;
+    void setCardSkillDict(CCDictionary * _cardSkillDict;);
+    CCDictionary * getCardSkillDict();
+
+    CCDictionary * _skillDict;
+    void setSkillDict(CCDictionary * _skillDict;);
+    CCDictionary * getSkillDict();
+
+    CCDictionary * _skillLearnDict;
+    void setSkillLearnDict(CCDictionary * _skillLearnDict;);
+    CCDictionary * getSkillLearnDict();
+
+    CCDictionary * _skillBookDataDict;
+    void setSkillBookDataDict(CCDictionary * _skillBookDataDict;);
+    CCDictionary * getSkillBookDataDict();
+
+    CCDictionary * _skillBookDict;
+    void setSkillBookDict(CCDictionary * _skillBookDict;);
+    CCDictionary * getSkillBookDict();
+
+    CCDictionary * _techTypeDict;
+    void setTechTypeDict(CCDictionary * _techTypeDict;);
+    CCDictionary * getTechTypeDict();
+
+    CCDictionary * _techTypeAddDict;
+    void setTechTypeAddDict(CCDictionary * _techTypeAddDict;);
+    CCDictionary * getTechTypeAddDict();
+
+    CCDictionary * _techSkillDict;
+    void setTechSkillDict(CCDictionary * _techSkillDict;);
+    CCDictionary * getTechSkillDict();
+
+    CCDictionary * _techMainDict;
+    void setTechMainDict(CCDictionary * _techMainDict;);
+    CCDictionary * getTechMainDict();
+
+    CCDictionary * _stageDict;
+    void setStageDict(CCDictionary * _stageDict;);
+    CCDictionary * getStageDict();
+
+    CCDictionary * _levelDict;
+    void setLevelDict(CCDictionary * _levelDict;);
+    CCDictionary * getLevelDict();
+
+    CCDictionary * _levelPositionDict;
+    void setLevelPositionDict(CCDictionary * _levelPositionDict;);
+    CCDictionary * getLevelPositionDict();
+
+    CCDictionary * _levelExpDict;
+    void setLevelExpDict(CCDictionary * _levelExpDict;);
+    CCDictionary * getLevelExpDict();
+
+    CCDictionary * _cardCountDict;
+    void setCardCountDict(CCDictionary * _cardCountDict;);
+    CCDictionary * getCardCountDict();
+
+    CCDictionary * _cardLevelupDict;
+    void setCardLevelupDict(CCDictionary * _cardLevelupDict;);
+    CCDictionary * getCardLevelupDict();
+
+    CCDictionary * _talkDict;
+    void setTalkDict(CCDictionary * _talkDict;);
+    CCDictionary * getTalkDict();
+
+    CCDictionary * _shopDict;
+    void setShopDict(CCDictionary * _shopDict;);
+    CCDictionary * getShopDict();
+
+    CCDictionary * _shopItemDict;
+    void setShopItemDict(CCDictionary * _shopItemDict;);
+    CCDictionary * getShopItemDict();
+
+    CCDictionary * _fbDict;
+    void setFbDict(CCDictionary * _fbDict;);
+    CCDictionary * getFbDict();
+
+    CCDictionary * _fbMonsterDict;
+    void setFbMonsterDict(CCDictionary * _fbMonsterDict;);
+    CCDictionary * getFbMonsterDict();
+
+    CCDictionary * _monsterDict;
+    void setMonsterDict(CCDictionary * _monsterDict;);
+    CCDictionary * getMonsterDict();
+
+    CCDictionary * _constantDict;
+    void setConstantDict(CCDictionary * _constantDict;);
+    CCDictionary * getConstantDict();
+
+    CCDictionary * _vipDict;
+    void setVipDict(CCDictionary * _vipDict;);
+    CCDictionary * getVipDict();
+
+    CCArray * _vipArr;
+    void setVipArr(CCArray * _vipArr;);
+    CCArray * getVipArr();
+
+    CCDictionary * _vipPriceDict;
+    void setVipPriceDict(CCDictionary * _vipPriceDict;);
+    CCDictionary * getVipPriceDict();
+
+    CCDictionary * _loginRewardDict;
+    void setLoginRewardDict(CCDictionary * _loginRewardDict;);
+    CCDictionary * getLoginRewardDict();
+
+    CCDictionary * _trophyRewardDict;
+    void setTrophyRewardDict(CCDictionary * _trophyRewardDict;);
+    CCDictionary * getTrophyRewardDict();
+
+    CCDictionary * _tradeDict;
+    void setTradeDict(CCDictionary * _tradeDict;);
+    CCDictionary * getTradeDict();
+
+    CCDictionary * _wordDict;
+    void setWordDict(CCDictionary * _wordDict;);
+    CCDictionary * getWordDict();
+
+    CCDictionary * _guideSceneDict;
+    void setGuideSceneDict(CCDictionary * _guideSceneDict;);
+    CCDictionary * getGuideSceneDict();
+
+    CCDictionary * _sysRewardDict;
+    void setSysRewardDict(CCDictionary * _sysRewardDict;);
+    CCDictionary * getSysRewardDict();
+
+    CCDictionary * _guildLevDict;
+    void setGuildLevDict(CCDictionary * _guildLevDict;);
+    CCDictionary * getGuildLevDict();
+
+    CCDictionary * _guildScaleDict;
+    void setGuildScaleDict(CCDictionary * _guildScaleDict;);
+    CCDictionary * getGuildScaleDict();
+
+    CCDictionary * _towerDict;
+    void setTowerDict(CCDictionary * _towerDict;);
+    CCDictionary * getTowerDict();
+
+    CCArray * _towerArr;
+    void setTowerArr(CCArray * _towerArr;);
+    CCArray * getTowerArr();
+
+    CCDictionary * _towerPassDict;
+    void setTowerPassDict(CCDictionary * _towerPassDict;);
+    CCDictionary * getTowerPassDict();
+
+    CCArray * _techListAll;
+    void setTechListAll(CCArray * _techListAll;);
+    CCArray * getTechListAll();
+
+    CCDictionary * _applyTrophyDict;
+    void setApplyTrophyDict(CCDictionary * _applyTrophyDict;);
+    CCDictionary * getApplyTrophyDict();
+
+    CCDictionary * _activeDict;
+    void setActiveDict(CCDictionary * _activeDict;);
+    CCDictionary * getActiveDict();
+
+    CCDictionary * _guildTechDict;
+    void setGuildTechDict(CCDictionary * _guildTechDict;);
+    CCDictionary * getGuildTechDict();
+
+    CCDictionary * _guildTechLevDict;
+    void setGuildTechLevDict(CCDictionary * _guildTechLevDict;);
+    CCDictionary * getGuildTechLevDict();
+
+    CCDictionary * _signRewardDict;
+    void setSignRewardDict(CCDictionary * _signRewardDict;);
+    CCDictionary * getSignRewardDict();
+
+    CCDictionary * _bossEnhanceDict;
+    void setBossEnhanceDict(CCDictionary * _bossEnhanceDict;);
+    CCDictionary * getBossEnhanceDict();
+
+    CCDictionary * _helpDataDict;
+    void setHelpDataDict(CCDictionary * _helpDataDict;);
+    CCDictionary * getHelpDataDict();
+
+    CCDictionary * _cheekDataDict;
+    void setCheekDataDict(CCDictionary * _cheekDataDict;);
+    CCDictionary * getCheekDataDict();
+
+    CCDictionary * _rewardBoxDict;
+    void setRewardBoxDict(CCDictionary * _rewardBoxDict;);
+    CCDictionary * getRewardBoxDict();
+
+    CCDictionary * _cardSplitDict;
+    void setCardSplitDict(CCDictionary * _cardSplitDict;);
+    CCDictionary * getCardSplitDict();
+
+    CCDictionary * _teachLevelDict;
+    void setTeachLevelDict(CCDictionary * _teachLevelDict;);
+    CCDictionary * getTeachLevelDict();
+
+    CCDictionary * _superGuideDict;
+    void setSuperGuideDict(CCDictionary * _superGuideDict;);
+    CCDictionary * getSuperGuideDict();
+
+    CCArray * _configCellDataArr;
+    void setConfigCellDataArr(CCArray * _configCellDataArr;);
+    CCArray * getConfigCellDataArr();
+
+    CCArray * _shopCellDataArr;
+    void setShopCellDataArr(CCArray * _shopCellDataArr;);
+    CCArray * getShopCellDataArr();
+
+    CCDictionary * _equipDict;
+    void setEquipDict(CCDictionary * _equipDict;);
+    CCDictionary * getEquipDict();
+
+    CCDictionary * _equipLevelupDict;
+    void setEquipLevelupDict(CCDictionary * _equipLevelupDict;);
+    CCDictionary * getEquipLevelupDict();
+
+    CCDictionary * _equipNatureDict;
+    void setEquipNatrueDict(CCDictionary * _equipNatureDict;);
+    CCDictionary * getEquipNatrueDict();
+
+    CCDictionary * _equipCostDict;
+    void setEquipCostDict(CCDictionary * _equipCostDict;);
+    CCDictionary * getEquipCostDict();
+
+    CCDictionary * _equipSkillDict;
+    void setEquipSkillDict(CCDictionary * _equipSkillDict;);
+    CCDictionary * getEquipSkillDict();
+
+    CCDictionary * _equipStarDict;
+    void setEquipStarDict(CCDictionary * _equipStarDict;);
+    CCDictionary * getEquipStarDict();
+
+    CCDictionary * _fiveEnhanceDict;
+    void setFiveEnhanceDict(CCDictionary * _fiveEnhanceDict;);
+    CCDictionary * getFiveEnhanceDict();
+
+    bool _isLoadingDone;
+    void setIsLoadingDone(bool _isLoadingDone;);
+    bool getIsLoadingDone();
+
+    int _loadingCount;
+    void setLoadingCount(int _loadingCount;);
+    int getLoadingCount();
+
+    int _loadingProgress;
+    void setLoadingProgress(int _loadingProgress;);
+    int getLoadingProgress();
+
+    CCArray * _fileList;
+    void setFileList(CCArray * _fileList;);
+    CCArray * getFileList();
+
+    CCDictionary * _nanbanPropDict;
+    void setNanbanPropDict(CCDictionary * _nanbanPropDict;);
+    CCDictionary * getNanbanPropDict();
+
+    CCDictionary * _nanbanMonsterDict;
+    void setNanbanMonsterDict(CCDictionary * _nanbanMonsterDict;);
+    CCDictionary * getNanbanMonsterDict();
+
+    CCDictionary * _deifyDict;
+    void setDeifyDict(CCDictionary * _deifyDict;);
+    CCDictionary * getDeifyDict();
+
+    
+    CCDictionary * _versionDataDict;
+    void setVersionDataDict(CCDictionary * _versionDataDict;);
+    CCDictionary * getVersionDataDict();
+
+    
+    CCArray* _cardBookArr;
+    void setCardBookArr(CCArray* cardBookArr);
+    CCArray* getCardBookArr();
+
+
+    
+    void reset();
+
+    void loadTextSNS();
+    void loadText();
+    void startLoadConfigData();
+    void loadConfigData();
+    void loadCellData();
+    void startLoadPiece();
+    void loadPiece();
+    void finishLoadPiece();
+    
+    void loadVersionData();
+    void loadTipsData();
+    
+    JobData* getJobData(int cardPer);
+    CCArray* getItemFoundDataList(int foundId);
+    CCArray* getFetterDataList(int cardId);
+    CCArray* getMonsterFormulaDataList(int cardId);
+    MonsterFormulaData* getMonsterFormulaData(int cardId, int assistantId);
+    CardLevelupPlusData* getCardLevelupPlusData(int cardId);
+    CardStarData* getCardStarData(int initialStar);
+    CardPerLevelupData* getCardPerLevelupData(int perId);
+    ItemData* getItemData(int itemId);
+    PerCardIdData* getPerCardIdById(int curCardId);
+    PerCardIdData* getPerCardIdByKey(int beforeCardId, int curPerId);
+//    CCArray* getPerCardIdArrByPerId(int perId);
+    
+    ComposeCostInfoData* getComposeCostInfoDataByKey(int star, int rarity);
+    ComposeVipData* getComposeVipData(int index);
+    DramaTalkData* getDramaTalkData(int index);
+    void removeAllDramaTalkData();
+    
+    CardData* getCardData(int cardId);
+    AttackEffectData* getEffectData(int effectId);
+    SkillData* getSkillData(int skillId);
+    SkillData* getSkillBookData(int bookId,int level);
+    SkillLearnData* getSkillLearnData(const char* key);
+    SkillBookData* getSkillBookDataFromData(int bookId);
+    TechTypeData* getTechData(int techTypeId);
+    TechData* getTechMainData(int techId);
+    TechSkillData* getTechSkillData(const char* key);
+    TechTypeAddData* getTechTypeAddData(const char* key);
+    StageData* getStageData(int stageId);
+    LevelData* getLevelData(const char* levelId);
+    CCArray* getLevelPositionArr(int stageId);
+    LevelExpData* getLevelExpData(int level);
+    CardLevelupData* getCardLevelupData(int cardId,int level);
+    FbData* getFbData(int fbId);
+    FbMonsterData* getFbMonsterData(const char* monsterId);
+    MonsterData* getMonsterData(int monsterId);
+    ConstantData* getConstantData(int constantId);
+    VipData* getVipData(int vipLevel);
+    LoginRewardData* getLoginRewardData(int loginDays);
+    TrophyRewardData* getTrophyRewardData(int rewardId);
+    ShopItemData* getShopItemData(int shopItemSeqId);
+    TradeData* getTradeData(int playerLevel);
+    DrawCardWordData *getWordData(int wordId);
+    GuideSceneData *getGuideScene(int sceneId);
+    int getCardCountUnlockLevel(int cardCount);
+    TowerData *getTowerData(int towerId);
+    TowerPassData *getTowerPassData(int towerPassId);
+    ApplyTrophyData *getApplyTrophyData(int rewardId);
+    ActiveData *getActiveData(int activeId);
+    GuildTechData *getGuildTechData(int techId);
+    GuildTechLevData *getGuildTechLevData(const char* key);
+    SignRewardData *getSignRewardData(int signDay);
+    BossEnhanceData *getBossEnhanceData(int mp);
+    EquipData *getEquipData(int equipId);
+    EquipLevelupData *getEquipLevelupData(int equipId, int star, int level);
+    EquipLevelupData *getEquipLevelupDataById(int equipId);
+    EquipNatureData *getEquipNatureDataById(int attId);
+    EquipCostData* getEquipCostData(int equipStar, int equipLevel);
+    EquipSkillData *getEquipSkillData(int skillId,int star);
+    EquipStarData *getEquipStarData(int star);
+    FiveEnhanceData *getFiveEnhanceData(int id);
+    HelpData *getHelpData(int id);
+    CheekData* getCheekData(int id);
+    RewardBoxData *getRewardBoxData(int id);
+    CardSplitData *getCardSplitData(int id);
+    LevelData *getTeachLevelData(int id);
+    SuperGuideData *getSuperGuideData(int id);
+    
+    NanbanPropData *getNanbanPropData(int propId);
+    NanbanMonsterData *getNanbanMonsterData(int monsterId);
+    DeifyData *getDeifyData(int cardId);
+    
+    CCArray *getTalkDataList(int levelId);
+    CCArray *getShopItemList(int shopId);
+    const char* getText(string key);
+    const char* getAlertInfo(string key);
+    const char* getTextCcb(string key);
+    const char* getTextSNS(string key);
+    CCArray *getBindList();
+    CCArray *getEvolveList();
+    CCArray *getEvolveDescList();
+    CCArray *getPropList();
+    CCArray *getPropDescList();
+    CCArray *getPay2List();
+    CCArray *getHomeBtnNameList();
+    CCArray *getHomeBtnDescList();
+    CCArray *getBattleReportList();
+    const char* getRandomTips();
+    int getVipPrice(int vipPriceId,int buyTimes);
+    const char* getSysRewardDesc(int sysType);
+    
+    // 卡牌图鉴
+    void setCardHeroListByPerType(int type, CCArray* arr);
+    CCArray* getCardHeroListByPerType(int type);
+    void removeAllHeroPerDict();
+    
+    void setCardMonsterListByType(int type, CCArray* arr);
+    CCArray* getCardMonsterListByType(int type);
+    void removeAllMonsterTypeDict();
+    
+    void setCardEquipListByType(int type, CCArray* arr);
+    CCArray* getCardEquipListByType(int type);
+    void removeAllEquipTypeDict();
+    
+    void setCardWithout(int cardId);
+    CCInteger* getCardWithout(int cardId);
+    void removeCardWithout(int cardId);
+    
+    void setEquipWithout(int equipId);
+    CCInteger* getEquipWithout(int equipId);
+    void removeEquipWithout(int equipId);
+    
+    VersionData* getCurVersionData(string place);
+
+
+};
+

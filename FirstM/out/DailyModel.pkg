@@ -1,0 +1,31 @@
+class DailyModel
+: public CCObject
+{
+    bool _reviewFlag;
+    
+public:
+    static DailyModel* sharedDailyModel();
+    DailyModel();
+    
+    bool _isAnnounce;
+    void setIsAnnounce(bool _isAnnounce;);
+    bool getIsAnnounce();
+
+    long _lastLoginTime;
+    void setLastLoginTime(long _lastLoginTime;);
+    long getLastLoginTime();
+
+    long _lastHomeTime;
+    void setLastHomeTime(long _lastHomeTime;);
+    long getLastHomeTime();
+
+    bool _isGotoShare;
+    void setIsGotoShare(bool _isGotoShare;);
+    bool getIsGotoShare();
+
+    
+    void logoutGame(bool isSwitch);
+    void doStoreReview(CCObject *data);
+    void doGainSysReward(CCObject *data);
+};
+

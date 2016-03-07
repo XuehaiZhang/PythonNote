@@ -1,0 +1,331 @@
+class MainGameModel
+: public CCNode
+{
+    long _lastLocalSec;
+    
+public:
+    MainGameModel();
+    ~MainGameModel();
+    static MainGameModel* sharedMainGameModel(void);
+    
+    long _serverTime;
+    void setServerTime(long serverTime);
+    long getServerTime();
+    
+    CCString * _defaultIp;
+    void setDefaultIp(CCString * _defaultIp;);
+    CCString * getDefaultIp();
+
+    
+    bool _isStarted;
+    void setIsStarted(bool _isStarted;);
+    bool getIsStarted();
+
+    bool _isFirst;
+    void setIsFirst(bool _isFirst;);
+    bool getIsFirst();
+
+    bool _isGreenMode;
+    void setIsGreenMode(bool isGreenMode);
+    bool getIsGreenMode();
+    bool _isGetLoadInfo;
+    void setIsGetLoadInfo(bool _isGetLoadInfo;);
+    bool getIsGetLoadInfo();
+
+    //登录信息
+    int _loginType;
+    void setLoginType(int _loginType;);
+    int getLoginType();
+
+    CCString * _apiUid;
+    void setApiUId(CCString * _apiUid;);
+    CCString * getApiUId();
+
+    CCString * _apiToken;
+    void setApiToken(CCString * _apiToken;);
+    CCString * getApiToken();
+
+    
+    Server * _server;
+    void setServer(Server * _server;);
+    Server * getServer();
+
+    
+    CCString * _notificationToken;
+    void setNotificationToken(CCString * _notificationToken;);
+    CCString * getNotificationToken();
+
+    Player* _player;
+    void setPlayer(Player* player);
+    Player* getPlayer();
+    Player * _tempPlayer;
+    void setTempPlayer(Player * _tempPlayer;);
+    Player * getTempPlayer();
+
+    
+    User * _user;
+    void setUser(User * _user;);
+    User * getUser();
+
+    bool _isCardGroupCached;
+    void setIsCardGroupCached(bool _isCardGroupCached;);
+    bool getIsCardGroupCached();
+
+    int _shopId;
+    void setShopId(int _shopId;);
+    int getShopId();
+
+    cc_timeval _lastSendTime;
+    void setLastSendTime(cc_timeval _lastSendTime;);
+    cc_timeval getLastSendTime();
+
+    CCDictionary * _lightCardDict;
+    void setLightCardDict(CCDictionary * _lightCardDict;);
+    CCDictionary * getLightCardDict();
+
+    bool _isShareReward;
+    void setIsShareReward(bool _isShareReward;);
+    bool getIsShareReward();
+
+    bool _isWorldBossOpen;
+    void setIsWorldBossOpen(bool _isWorldBossOpen;);
+    bool getIsWorldBossOpen();
+
+    bool _isEvilOpen;
+    void setIsEvilOpen(bool _isEvilOpen;);
+    bool getIsEvilOpen();
+
+    bool _isEvolveCanReset4Skills;
+    void setIsEvolveCanReset4Skills(bool _isEvolveCanReset4Skills;);
+    bool getIsEvolveCanReset4Skills();
+
+    int _battleSpeed;
+    void setBattleSpeed(int _battleSpeed;);
+    int getBattleSpeed();
+
+    bool _isFromHome;
+    void setIsFromHome(bool _isFromHome;);
+    bool getIsFromHome();
+
+    bool _isForceShowAnnouce;
+    void setIsForceShowAnnouce(bool _isForceShowAnnouce;);
+    bool getIsForceShowAnnouce();
+
+    
+    bool _isSignReward;
+    void setIsSignReward(bool var);// {_isSignReward = var;};
+    bool getIsSignReward();// {return _isSignReward;};
+    
+    bool _isLevelMession;
+    void setIsLevelMession(bool _isLevelMession;);
+    bool getIsLevelMession();
+
+    bool _isFirstPay;
+    void setIsFirstPay(bool _isFirstPay;);
+    bool getIsFirstPay();
+
+    bool _isActiveReward;
+    void setIsActiveReward(bool _isActiveReward;);
+    bool getIsActiveReward();
+
+    bool _isDailyReward;
+    void setIsDailyReward(bool _isDailyReward;);
+    bool getIsDailyReward();
+
+    bool _isDailyMession;
+    void setIsDailyMession(bool _isDailyMession;);
+    bool getIsDailyMession();
+
+    bool _isVipReward;
+    void setIsVipReward(bool _isVipReward;);
+    bool getIsVipReward();
+
+    bool _isNewSuperItem;
+    void setIsNewSuperItem(bool _isNewSuperItem;);
+    bool getIsNewSuperItem();
+
+    bool _isMainTask;
+    void setIsMainTask(bool _isMainTask;);
+    bool getIsMainTask();
+
+    bool _isFightTechUp;
+    void setIsFightTechUp(bool _isFightTechUp;);
+    bool getIsFightTechUp();
+
+    bool _isNewFriend;
+    void setIsNewFriend(bool _isNewFriend;);
+    bool getIsNewFriend();
+
+    bool _isNewPic;
+    void setIsNewPic(bool _isNewPic;);
+    bool getIsNewPic();
+
+    bool _isJunTuan;
+    void setIsJunTuan(bool _isJunTuan;);
+    bool getIsJunTuan();
+
+    int _stageIdReward;
+    void setStageIdReward(int _stageIdReward;);
+    int getStageIdReward();
+
+    bool _isEquipSpilt;
+    void setIsEquipSpilt(bool _isEquipSpilt;);
+    bool getIsEquipSpilt();
+
+    bool _isHeroSpilt;
+    void setIsHeroSpilt(bool _isHeroSpilt;);
+    bool getIsHeroSpilt();
+
+    bool _isHeroUpStar;
+    void setIsHeroUpStar(bool _isHeroUpStar;);
+    bool getIsHeroUpStar();
+
+    bool _isHeroChangeJob;
+    void setIsHeroChangeJob(bool _isHeroChangeJob;);
+    bool getIsHeroChangeJob();
+
+    bool _isCanEquip;
+    void setIsCanEquip(bool _isCanEquip;);
+    bool getIsCanEquip();
+
+    bool _isEquipLevelup;
+    void setIsEquipLevelup(bool _isEquipLevelup;);
+    bool getIsEquipLevelup();
+
+    bool _isSkillUp;
+    void setIsSkillUp(bool _isSkillUp;);
+    bool getIsSkillUp();
+
+    
+    int _language;
+    void setLanguage(int _language;);
+    int getLanguage();
+
+    
+    bool _isChangeHead;
+    void setIsChangeHead(bool _isChangeHead;);
+    bool getIsChangeHead();
+
+    
+    int _lineRewardTime;
+    void setLineRewardTime(int _lineRewardTime;);
+    int getLineRewardTime();
+
+    CCArray* _lineRewardList;
+    void setLineRewardList(CCArray* _lineRewardList;);
+    CCArray* getLineRewardList();
+
+    
+    bool _isCheckZhuchengLayer;
+    void setIsCheckZhuchengLayer(bool _isCheckZhuchengLayer;);
+    bool getIsCheckZhuchengLayer();
+
+    bool _isCheckSeedLayer;
+    void setIsCheckSeedLayer(bool _isCheckSeedLayer;);
+    bool getIsCheckSeedLayer();
+
+    bool _isCheckTechLayer;
+    void setIsCheckTechLayer(bool _isCheckTechLayer;);
+    bool getIsCheckTechLayer();
+
+    bool _isCheckFriendLayer;
+    void setIsCheckFriendLayer(bool _isCheckFriendLayer;);
+    bool getIsCheckFriendLayer();
+
+    bool _isCheckEventLayer;
+    void setIsCheckEventLayer(bool _isCheckEventLayer;);
+    bool getIsCheckEventLayer();
+
+    bool _isCheckTaskLayer;
+    void setIsCheckTaskLayer(bool _isCheckTaskLayer;);
+    bool getIsCheckTaskLayer();
+
+    bool _isCheckItemLayer;
+    void setIsCheckItemLayer(bool _isCheckItemLayer;);
+    bool getIsCheckItemLayer();
+
+    
+    bool _isBattleLayerFrom;
+    void setIsBattleLayerFrom(bool _isBattleLayerFrom;);
+    bool getIsBattleLayerFrom();
+
+    
+    
+    bool _isShopNoTip;
+    void setIsShopNoTip(bool _isShopNoTip;);
+    bool getIsShopNoTip();
+
+    
+    CCArray* _effectList;//卡牌特效
+    void setEffectList(CCArray* effectList);
+    CCArray* getEffectList();
+    
+    CCArray* _signRewardList;//活动签到奖励
+    void setSignRewardList(CCArray* signRewardList);
+    CCArray* getSignRewardList();
+    
+    CCArray* _cheekList;//已买卡牌特效
+    void setCheekList(CCArray* cheekList);
+    CCArray* getCheekList();
+    
+    bool _isSign;//活动签到
+    void setIsSign(bool isSign);
+    bool getIsSign();
+    
+    int _loginDay;
+    void setLoginDat(int day);
+    int getLoginDat();
+    
+    bool _is7Sign;
+    void setIs7Sign(bool is7Sign);
+    bool getIs7Sign();
+    
+    // socket event
+    void doGameLogin(CCObject *object);
+    void doGameStart(CCObject *data);
+    void doCardList(CCObject *data);
+    void doCardGroupList(CCObject *data);
+    void doRoleItemList(CCObject *data);
+    void doGameAlert(CCObject *data);
+    void doPlayerAsset(CCObject *data);
+    void doRewardList(CCObject *data);
+    void doRewardBox(CCObject *data);
+    void doMusouLose(CCObject *data);
+    void doGameHeart(CCObject *data);
+    void doVipBonus(CCObject *data);
+    void doYJHomeIcon(CCObject *data);
+    void doGameSynReward(CCObject *data);
+    void doSystemAlert(CCObject *data);
+    void doCardExtraInfoList(CCObject *data);
+    void doShowAnnouceLayer(CCObject *data);
+    void doGotSign(CCObject *data);
+    void doGotOfflineReward(CCObject *data);
+    void doGotSyncTask(CCObject *data);
+    void doCreatePlayer(CCObject *data);
+    void doGotLoad(cocos2d::CCObject *data);
+
+    void lineRewardUpdate(float dt);
+    
+    // logic
+    bool lazySignRewardList();
+    bool lazyCardGroupList();
+    void roleItemList();
+    void saveLoginData(int loginType,const char* uid,const char* token);
+    void saveServer(Server *server);
+    void saveBattleSpeed();
+    void gameHeart();
+    void time();
+    void showAnnouceLayer(int type);
+    void showAnnouceLayerWithId(int type,int id);
+    void cardLevelUp();
+    void addStroke(CCNode* node);
+    void addStroke(CCNode* node, ccColor3B color);
+    void addStroke(CCNode* node, float strokeSize, ccColor3B color);
+    void sortCardList();
+    void addFlyUpWord(const char * str, CCPoint ccp, CCNode* parent);
+    void goFight();
+    void firstStartGame();
+    
+    
+};
+
